@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9000
+      name: zuul
+      profile: dev
+      label: master
