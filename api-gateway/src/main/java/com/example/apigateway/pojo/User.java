@@ -1,13 +1,18 @@
 package com.example.apigateway.pojo;
 
+import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 @Entity
+@Data
 public class User implements UserDetails {
     @Id
     private Integer id;
@@ -17,17 +22,12 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
-    }
-
-    @Override
-    public String getPassword() {
-        return password;
-    }
-
-    @Override
-    public String getUsername() {
-        return username;
+        String[] authorities = roles.split(",");
+        List<SimpleGrantedAuthority> simpleGrantedAuthorities = new ArrayList<>();
+        for (String role : authorities) {
+            simpleGrantedAuthorities.add(new SimpleGrantedAuthority(role));
+        }
+        return simpleGrantedAuthorities;
     }
 
     @Override
