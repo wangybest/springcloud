@@ -1,19 +1,21 @@
 package com.example.consumer.service;
 
-import com.example.consumer.hystrix.HelloHystrix;
+import com.example.consumer.hystrix.DemoHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(value = "server-producer", fallback = HelloHystrix.class)
+@Component
+@FeignClient(value = "server-producer", fallback = DemoHystrix.class)
 public interface DemoService {
 
-    @GetMapping("hello/{name}")
-    String showHello(@PathVariable String name);
-
-    @GetMapping
+    @GetMapping("/home")
     String home();
 
-    @GetMapping("/bye")
-    String bye();
+    @GetMapping("/user")
+    String user();
+
+    @GetMapping("/admin")
+    String admin();
+
 }
