@@ -40,10 +40,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/login","/consumer/home")// 对登录要允许匿名访问
+                .antMatchers("/login","/api/home")// 对登录要允许匿名访问
                 .permitAll()
-                .antMatchers("/consumer/user").hasRole("USER")
-                .antMatchers("/consumer/admin").hasRole("ADMIN")
+                .antMatchers("/api/user").hasRole("USER")
+                .antMatchers("/api/admin").hasRole("ADMIN")
                 .anyRequest()// 除上面外的所有请求全部需要鉴权认证
                 .authenticated()
                 .and()
@@ -55,8 +55,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         // 添加JWT filter
         httpSecurity.addFilterBefore(jwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
     }
-
-
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

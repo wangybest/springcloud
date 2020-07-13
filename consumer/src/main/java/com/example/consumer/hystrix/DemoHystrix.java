@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class DemoHystrix implements DemoService {
 
-
     @Override
     public String home() {
         return "home熔断触发";

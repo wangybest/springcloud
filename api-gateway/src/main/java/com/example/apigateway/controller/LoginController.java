@@ -17,7 +17,6 @@ import java.awt.*;
 @RestController
 public class LoginController {
 
-
     private JwtTokenUtil jwtTokenUtil;
 
     private AuthenticationManagerBuilder authenticationManagerBuilder;
