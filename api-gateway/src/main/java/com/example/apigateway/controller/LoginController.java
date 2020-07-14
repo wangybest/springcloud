@@ -3,6 +3,7 @@ package com.example.apigateway.controller;
 
 import com.example.apigateway.util.JwtTokenUtil;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -17,14 +18,15 @@ import java.awt.*;
 @RestController
 public class LoginController {
 
+    @Autowired
     private JwtTokenUtil jwtTokenUtil;
 
-    private AuthenticationManagerBuilder authenticationManagerBuilder;
+/*    private AuthenticationManagerBuilder authenticationManagerBuilder;
 
     public LoginController(JwtTokenUtil jwtTokenUtil, AuthenticationManagerBuilder authenticationManagerBuilder) {
         this.jwtTokenUtil = jwtTokenUtil;
-        this.authenticationManagerBuilder = authenticationManagerBuilder;
-    }
+        this.authenticationManagerBuilder = authenticationManagerBuilder;*/
+
 
     @GetMapping("/login")
     public String login(@RequestParam String username, @RequestParam String password) {

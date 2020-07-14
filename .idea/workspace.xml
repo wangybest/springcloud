@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ee61fd2-2f21-435b-8201-416c66dbeb97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/example/apigateway/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/example/consumer/hystrix/DemoHystrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/example/consumer/hystrix/DemoHystrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-producer/src/main/java/com/example/serverproducer/controllerapi/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-producer/src/main/java/com/example/serverproducer/controllerapi/Hello.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,12 +151,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ed5b3dde" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4c9df48e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ed5b3dde" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c85b864" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4c9df48e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f632dfa4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -184,6 +180,7 @@
       <workItem from="1594564649979" duration="3149000" />
       <workItem from="1594600377918" duration="3675000" />
       <workItem from="1594606059837" duration="20637000" />
+      <workItem from="1594687022317" duration="2415000" />
     </task>
     <servers />
   </component>
